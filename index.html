@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio | Dante Basso</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">Dante<span>Basso</span></div>
+        
+        <div class="language-switch">
+            <button id="btn-pt" class="lang-btn active">PT</button>
+            <button id="btn-en" class="lang-btn">EN</button>
+            <button id="btn-es" class="lang-btn">ES</button>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="#home" data-i18n="nav_home">Início</a></li>
+            <li><a href="#about" data-i18n="nav_about">Sobre</a></li>
+            <li><a href="#skills" data-i18n="nav_skills">Skills</a></li>
+            <li><a href="#experience" data-i18n="nav_exp">Experiência</a></li>
+            <li><a href="#resume" data-i18n="nav_resume">Currículo</a></li>
+            <li><a href="#contact" data-i18n="nav_contact">Contato</a></li>
+        </ul>
+        <div class="menu-btn">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <span class="greeting" data-i18n="hero_greeting">Olá, eu sou</span>
+            <h1 class="name">Dante Cesar Basso Filho</h1>
+            <h3 class="title"><span data-i18n="hero_role_prefix">Atuo como</span> <span id="typewriter"></span></h3>
+            <p class="description" data-i18n="hero_desc">
+                Engenheiro de Software experiente e altamente adaptável, com um histórico de sucesso no desenvolvimento de soluções backend e arquiteturas de microsserviços na AWS.
+            </p>
+            <a href="#contact" class="btn" data-i18n="btn_contact">Entrar em Contato</a>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <h2 class="section-title" data-i18n="about_title">Sobre Mim</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p data-i18n="about_text_1">
+                    Com mais de 17 anos de experiência em Java, atuo em todo o ciclo de desenvolvimento, com profundo entendimento de metodologias Ágeis e foco na entrega de valor.
+                </p>
+                <p data-i18n="about_text_2">
+                    Minha expertise inclui Java (17+), Kotlin, Spring Boot e o uso de tecnologias como Kafka, bancos de dados (PostgreSQL, NoSQL) e Docker. Frequentemente atuo como Tech Lead, mentorando equipes e definindo arquiteturas.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section bg-alt">
+        <h2 class="section-title" data-i18n="nav_skills">Skills</h2>
+        
+        <h3 class="skill-category-title">Tech Stack</h3>
+        <div class="skills-container">
+            <div class="skill-card"><i class="fab fa-java"></i><p>Java 17+</p></div>
+            <div class="skill-card"><i class="fab fa-android"></i><p>Kotlin</p></div>
+            <div class="skill-card"><i class="fas fa-leaf"></i><p>Spring Boot</p></div>
+            <div class="skill-card"><i class="fab fa-docker"></i><p>Docker</p></div>
+            <div class="skill-card"><i class="fas fa-database"></i><p>SQL / NoSQL</p></div>
+            <div class="skill-card"><i class="fas fa-cloud"></i><p>AWS</p></div>
+            <div class="skill-card"><i class="fas fa-project-diagram"></i><p>Kafka</p></div>
+            <div class="skill-card"><i class="fas fa-random"></i><p>ETL</p></div>
+            <div class="skill-card"><i class="fab fa-git-alt"></i><p>Git</p></div>
+            <div class="skill-card"><i class="fas fa-desktop"></i><p>Qt (C++)</p></div>
+        </div>
+
+        <h3 class="skill-category-title" data-i18n="skills_cat_familiarity">Familiaridade</h3>
+        <div class="skills-container">
+            <div class="skill-card"><i class="fab fa-react"></i><p>React</p></div>
+            <div class="skill-card"><i class="fab fa-node-js"></i><p>Node.js</p></div>
+            <div class="skill-card"><i class="fab fa-angular"></i><p>AngularJS</p></div>
+            <div class="skill-card"><i class="fab fa-python"></i><p>Python</p></div>
+            <div class="skill-card"><i class="fas fa-terminal"></i><p>Shell Script</p></div>
+        </div>
+
+        <h3 class="skill-category-title" data-i18n="skills_cat_hard">Hard Skills & Tools</h3>
+        <div class="skills-container">
+            <div class="skill-card"><i class="fas fa-language"></i><p data-i18n="skill_english">Inglês (C2)</p></div>
+            <div class="skill-card"><i class="fas fa-language"></i><p data-i18n="skill_spanish">Espanhol (A1)</p></div>
+            <div class="skill-card"><i class="fab fa-google"></i><p>Workspace</p></div>
+            <div class="skill-card"><i class="fab fa-slack"></i><p>Slack</p></div>
+            <div class="skill-card"><i class="fas fa-users"></i><p>Teams</p></div>
+            <div class="skill-card"><i class="fab fa-jira"></i><p>Jira</p></div>
+            <div class="skill-card"><i class="fab fa-trello"></i><p>Trello</p></div>
+            <div class="skill-card"><i class="fas fa-tasks"></i><p>Scrum</p></div>
+            <div class="skill-card"><i class="fas fa-clipboard-list"></i><p>Kanban</p></div>
+        </div>
+
+        <h3 class="skill-category-title">Soft Skills</h3>
+        <div class="skills-container">
+            <div class="skill-card"><i class="fas fa-user-clock"></i><p data-i18n="skill_self_management">Auto Gerenciamento</p></div>
+            <div class="skill-card"><i class="fas fa-user-tie"></i><p>Tech Lead</p></div>
+            <div class="skill-card"><i class="fas fa-comments"></i><p data-i18n="skill_communication">Comunicação</p></div>
+            <div class="skill-card"><i class="fas fa-sync-alt"></i><p data-i18n="skill_flexibility">Flexibilidade</p></div>
+            <div class="skill-card"><i class="fas fa-handshake"></i><p data-i18n="skill_commitment">Comprometimento</p></div>
+            <div class="skill-card"><i class="fas fa-brain"></i><p data-i18n="skill_critical">Pensamento Crítico</p></div>
+            <div class="skill-card"><i class="fas fa-balance-scale"></i><p data-i18n="skill_ethics">Ética</p></div>
+            <div class="skill-card"><i class="fas fa-users-cog"></i><p data-i18n="skill_leadership">Liderança</p></div>
+        </div>
+    </section>
+
+    <section id="experience" class="section">
+        <h2 class="section-title" data-i18n="exp_title">Experiência Recente</h2>
+        <div class="projects-container">
+            
+            <div class="project-card">
+                <div class="project-info">
+                    <h3>Globant</h3>
+                    <p class="role">Senior Software Engineer & Tech Lead</p>
+                    <p data-i18n="exp_globant_desc">
+                        Atuação como Tech Lead, desenvolvendo microsserviços com Java 17, Spring Boot e Programação Reativa.
+                    </p>
+                    <div class="tags">
+                        <span>Java 17</span><span>Spring Webflux</span><span>Couchbase</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-info">
+                    <h3>Rezolve</h3>
+                    <p class="role">Senior Software Engineer</p>
+                    <p data-i18n="exp_rezolve_desc">
+                        Manutenção de microsserviços Java com dados geoespaciais, utilizando Kubernetes e RabbitMQ.
+                    </p>
+                    <div class="tags">
+                        <span>K8s</span><span>RabbitMQ</span><span>Geospatial</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-info">
+                    <h3>Wealth Systems</h3>
+                    <p class="role">Senior Java Developer</p>
+                    <p data-i18n="exp_wealth_desc">
+                        Planejamento de CRM em nuvem com microsserviços e integrações AWS S3 e Neo4J.
+                    </p>
+                    <div class="tags">
+                        <span>CRM Cloud</span><span>Neo4J</span><span>AWS S3</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="resume" class="section bg-alt">
+        <h2 class="section-title" data-i18n="resume_title">Meu Currículo</h2>
+        <div class="resume-content" style="text-align: center;">
+            <p style="margin-bottom: 30px; color: #ccc;" data-i18n="resume_text">
+                Prefere uma versão offline? Baixe meu currículo completo em PDF.
+            </p>
+            <a href="cv.pdf" download="Dante_Basso_CV.pdf" class="btn">
+                <i class="fas fa-file-pdf"></i> <span data-i18n="btn_download">Download CV</span>
+            </a>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <h2 class="section-title" data-i18n="nav_contact">Contato</h2>
+        <div class="contact-container" style="text-align: center;">
+            <p data-i18n="contact_text">Mora em Cascavel, PR? Vamos tomar um café. Ou entre em contato online:</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/dante-basso-filho" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/dcbasso" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="mailto:dcbasso@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+            <p style="margin-top: 20px; font-size: 0.9rem; color: #666;">+55 45 99145-8445</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Dante Cesar Basso Filho.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
