@@ -11,10 +11,12 @@ document.addEventListener('DOMContentLoaded', function() {
             about_title: "Sobre Mim",
             about_text_1: "Com mais de 17 anos de experiência em Java, atuo em todo o ciclo de desenvolvimento, com profundo entendimento de metodologias Ágeis e foco na entrega de valor.",
             about_text_2: "Minha expertise inclui Java (21+), Kotlin, Spring Boot e o uso de tecnologias como Kafka, bancos de dados (PostgreSQL, NoSQL) e Docker. Frequentemente atuo como Tech Lead, mentorando equipes e definindo arquiteturas.",
-            skills_cat_familiarity: "Familiaridade / Ferramentas",
+            
+            // Novos Títulos de Seções
+            skills_cat_tools: "Ferramentas & Cloud",
+            skills_cat_familiarity: "Conceitos & Familiaridade",
             skills_cat_hard: "Idiomas & Soft Skills",
             
-            // Novas chaves de tradução
             skill_native: "Português (Nativo)", skill_english: "Inglês (C2)", skill_spanish: "Espanhol (A1)",
             skill_leadership: "Liderança",
             skill_microservices: "Microsserviços",
@@ -35,10 +37,12 @@ document.addEventListener('DOMContentLoaded', function() {
             about_title: "About Me",
             about_text_1: "Experienced throughout the entire development lifecycle, with a deep understanding of Agile methodologies and an unwavering focus on delivering value.",
             about_text_2: "Expertise in Java (21+), Kotlin, Spring Boot, and the utilization of technologies such as Kafka, databases (PostgreSQL, NoSQL), and Docker. Acting as a Tech Lead and mentoring teams.",
-            skills_cat_familiarity: "Familiarity / Tools",
+            
+            // New Section Titles
+            skills_cat_tools: "Tools & Cloud",
+            skills_cat_familiarity: "Concepts & Familiarity",
             skills_cat_hard: "Languages & Soft Skills",
             
-            // Translations keys
             skill_native: "Portuguese (Native)", skill_english: "English (C2)", skill_spanish: "Spanish (A1)",
             skill_leadership: "Leadership",
             skill_microservices: "Microservices",
@@ -59,10 +63,12 @@ document.addEventListener('DOMContentLoaded', function() {
             about_title: "Sobre Mí",
             about_text_1: "Con más de 17 años de experiencia en Java, trabajo en todo el ciclo de desarrollo, con un profundo entendimiento de metodologías Ágiles y enfoque en la entrega de valor.",
             about_text_2: "Mi experiencia incluye Java (21+), Kotlin, Spring Boot y el uso de tecnologías como Kafka, bases de datos (PostgreSQL, NoSQL) y Docker. Frecuentemente actúo como Tech Lead, asesorando equipos y definiendo arquitecturas.",
-            skills_cat_familiarity: "Familiaridad / Herramientas",
+            
+            // Nuevos Títulos
+            skills_cat_tools: "Herramientas & Cloud",
+            skills_cat_familiarity: "Conceptos & Familiaridad",
             skills_cat_hard: "Idiomas & Habilidades",
             
-            // Claves de traducción
             skill_native: "Portugués (Nativo)", skill_english: "Inglés (C2)", skill_spanish: "Español (A1)",
             skill_leadership: "Liderazgo",
             skill_microservices: "Microservicios",
