@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
             nav_home: "Início", nav_about: "Sobre", nav_skills: "Skills", nav_exp: "Experiência", nav_resume: "Currículo", nav_contact: "Contato",
             
             // Hero
-            hero_greeting: "Olá, eu sou", hero_role_prefix: "Atuo como",
+            hero_greeting: "Olá, eu sou", hero_role_prefix: "",
             hero_desc: "Engenheiro de Software experiente e altamente adaptável, com um histórico de sucesso no desenvolvimento de soluções backend e arquiteturas de microsserviços na AWS e GCP.",
             btn_contact: "Entrar em Contato",
             
@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function() {
             nav_home: "Home", nav_about: "About", nav_skills: "Skills", nav_exp: "Experience", nav_resume: "Resume", nav_contact: "Contact",
             
             // Hero
-            hero_greeting: "Hello, I am", hero_role_prefix: "I work as a",
+            hero_greeting: "Hello, I am", hero_role_prefix: "",
             hero_desc: "Experienced and highly adaptable Software Engineer with a successful track record in developing backend solutions ranging from microservices architectures on AWS and GCP.",
             btn_contact: "Get in Touch",
             
@@ -96,7 +96,7 @@ document.addEventListener('DOMContentLoaded', function() {
             nav_home: "Inicio", nav_about: "Sobre Mí", nav_skills: "Habilidades", nav_exp: "Experiencia", nav_resume: "Currículum", nav_contact: "Contacto",
             
             // Hero
-            hero_greeting: "Hola, soy", hero_role_prefix: "Trabajo como",
+            hero_greeting: "Hola, soy", hero_role_prefix: "",
             hero_desc: "Ingeniero de Software experimentado y altamente adaptable, con un historial exitoso en el desarrollo de soluciones backend y arquitecturas de microservicios en AWS y GCP.",
             btn_contact: "Ponerse en Contacto",
             
@@ -143,7 +143,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         elements.forEach(element => {
             const key = element.getAttribute('data-i18n');
-            if (translations[lang] && translations[lang][key]) {
+            if (translations[lang] && translations[lang][key] !== undefined) {
                 element.innerText = translations[lang][key];
             }
         });
@@ -174,9 +174,9 @@ document.addEventListener('DOMContentLoaded', function() {
     if (textElement) {
         const texts = [
             'Senior Architect',
-            'Senior Software Engineer', 
             'Java & Kotlin Specialist', 
-            'Tech Lead'
+            'Tech Lead',
+            'AI First Mindset'
         ];
         let count = 0;
         let index = 0;
